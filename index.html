@@ -3,39 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo Crud</title>
-    <style>
-        body{
-            width: 1024px;
-            margin: 0 auto;
-        }
-
-        table{
-            margin: 10px;
-            border-collapse: collapse;
-        }
-        tr td:first-child{
-            width: 140px;
-        }
-        tr td:nth-child(2){
-            width: 600px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script type="text/javascript" src="./js/app.js"></script>
 </head>
 <body>
-<header>
-    <h2>Todo App</h2>
+<header class="main-header">
+    <h2 class="main-header__h2">Todo App</h2>
+    <div class="toast"> This is a sample toast message!!</div>
 </header>
-
-<section>
-
-     <label for="todo-text">Todo Text</label>
-        <input type="text" id="todo-text" />
-        <button id="saveButton">Save</button>
-   
-
+<section class="main-section">
+    <div class="todo__form">
+    <label for="todo-text">Todo Text</label>
+    <input type="text" id="todo-text"/>
+    <button id="saveButton">Save</button>
+    </div>
     <div>
-        <table border="1">
+        <table class="todo-table" border="1">
             <thead>
             <tr>
                 <th>Sno.</th>

@@ -1,0 +1,74 @@
+body{
+    width: 1024px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.todo-table{
+    border-collapse: collapse;
+    margin-top:10px;
+    width: 100%;
+}
+.todo-table tr td:first-child{
+    width: 140px;
+}
+.todo-table tr td:nth-child(2){
+    width: 600px;
+}
+
+.main-header{
+    background-color: black;
+    color: white;
+}
+.main-header__h2{
+    margin:0;
+    padding:10px;
+}
+
+.main-section{
+    margin-top:10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.todo__form label{
+    display: block;
+    font-size: 1.2rem;
+}
+
+.todo__form input{
+    width: 300px;
+    margin-top: 5px;
+}
+.todo__form button{
+    display: block;
+    background-color: #0090ff;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.todo__form button:active{
+    transform: scale(0.95,0.95);
+    transition: 0s ease-in;
+}
+
+.toast{
+    border-radius: 4px;
+    margin: 0 auto;
+    position: absolute;
+    left: 30%;
+    width: 600px;
+    background-color: #0099ff;
+    padding: 8px;
+    opacity: .5;
+    transition: 0.3s ease-in-out;
+}
+
+.toast:hover{
+    transform: scale(0.5,0.5);
+}
